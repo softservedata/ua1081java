@@ -26,7 +26,7 @@ public class Main {
         if(sc.hasNextDouble()){
             third = sc.nextDouble();
         }else {
-            System.out.println("Incorrect num and first num equels = 0:");
+            System.out.println("Incorrect num and third num equels = 0:");
             sc.next();
         }
         System.out.println("AVG num:");
