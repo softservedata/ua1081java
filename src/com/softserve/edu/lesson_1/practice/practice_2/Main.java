@@ -4,33 +4,35 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //AVG Number
+
         Scanner sc = new Scanner(System.in);
-        double first =0;
+        double first = 0;
         double second = 0;
         double third = 0;
         System.out.println("Input first num:");
-        if(sc.hasNextDouble()){
+        if (sc.hasNextDouble()) {
             first = sc.nextDouble();
-        }else {
+        } else {
             System.out.println("Incorrect num and first num equels = 0:");
             sc.next();
         }
         System.out.println("Input second num:");
-        if(sc.hasNextDouble()){
+        if (sc.hasNextDouble()) {
             second = sc.nextDouble();
-        }else {
+        } else {
             System.out.println("Incorrect num and second num equels = 0:");
             sc.next();
         }
         System.out.println("Input third num:");
-        if(sc.hasNextDouble()){
+        if (sc.hasNextDouble()) {
             third = sc.nextDouble();
-        }else {
+        } else {
             System.out.println("Incorrect num and third num equels = 0:");
             sc.next();
         }
         System.out.println("AVG num:");
-        double avg = (first+second+third) / 3;
+        double avg = (first + second + third) / 3;
         System.out.println(avg);
 
     }
