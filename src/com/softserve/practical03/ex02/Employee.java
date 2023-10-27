@@ -5,6 +5,8 @@ public class Employee {
     private double rate;
     private double hours;
 
+    public static double totalSum = 0;
+
     public Employee() {
     }
 
@@ -17,6 +19,7 @@ public class Employee {
         this.name = name;
         this.rate = rate;
         this.hours = hours;
+        totalSum += getSalary();
     }
 
     public double getSalary() {
