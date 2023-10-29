@@ -26,3 +26,14 @@ public class Task01 {
         return number >= -5 && number <= 5;
     }
 }
+//You can to do your code more flexible. For example:
+//    public static boolean inRange(double number, double minValue, double maxValue) {
+//        return number >= minValue && number <= maxValue;
+//    }
+//
+//    // using inRange method
+//    double min = -5;
+//    double max = 5;
+//    double numberToCheck = 3;
+//
+//    boolean isInRange = inRange(numberToCheck, min, max);

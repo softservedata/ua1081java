@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task03 {
     public enum HTTP{
-        ERROR400(400),
+        ERROR400(400),//better to use here 400("Bad Request") and the same for other codes
         ERROR401(401),
         ERROR402(402),
         ERROR403(403),
@@ -12,10 +12,8 @@ public class Task03 {
         ERROR405(405),
         ERROR406(406),
         ERROR407(407);
-        private final int code;
 
         private HTTP(int code){
-            this.code = code;
         }
 
         @Override
