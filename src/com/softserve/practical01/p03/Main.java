@@ -11,7 +11,7 @@ public class Main {
         int b = sc.nextInt();
 
         System.out.println("Sum is " + (a + b));
-        System.out.println("Extraction is " + (a - b));
+        System.out.println("Subtraction is " + (a - b));
         System.out.println("Multiplication is " + (a * b));
         System.out.println("Division is " + ((double)a / b));
 

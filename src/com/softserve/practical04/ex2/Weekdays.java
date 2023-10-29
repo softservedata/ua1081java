@@ -2,10 +2,10 @@ package com.softserve.practical04.ex2;
 
 import java.util.Scanner;
 
-public class WeekDays {
+public class Weekdays {
     private int weekDay = 0;
 
-    public WeekDays() {
+    public Weekdays() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Please, input number of a day in the week: ");
         weekDay = sc.nextInt();

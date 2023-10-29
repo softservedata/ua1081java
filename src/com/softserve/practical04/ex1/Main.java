@@ -12,9 +12,7 @@ public class Main {
         int num2 = sc.nextInt();
         System.out.print("Please, input number 3: ");
         int num3 = sc.nextInt();
-        counter.oddCounter(num1);
-        counter.oddCounter(num2);
-        counter.oddCounter(num3);
+        counter.oddCounter(num1, num2, num3);
         System.out.println(counter.getCounter());
     }
 }
