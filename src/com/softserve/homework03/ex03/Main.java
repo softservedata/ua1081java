@@ -7,7 +7,7 @@ public class Main {
         Person p3 = new Person();
         Person p4 = new Person();
         Person p5 = new Person();
-
+//Why haven't you used the input() method for obtaining values for p1 to p5 in your code?
         p1.output();
         p2.output();
         p3.output();

@@ -11,7 +11,9 @@ public class Main {
         int num2 = sc.nextInt();
         System.out.print("Input the third number: ");
         int num3 = sc.nextInt();
-        sc.close();
+
         System.out.printf("The smallest number is %s", IntCounter.minCounter(num1, num2, num3));
+
+        sc.close();
     }
 }

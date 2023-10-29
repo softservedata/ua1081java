@@ -1,5 +1,5 @@
 package com.softserve.homework03.ex01;
-
+//For this task, it is advisable to also verify the existence of such a triangle.
 public class Triangle {
     private double side1;
     private double side2;
@@ -12,7 +12,7 @@ public class Triangle {
     }
 
     public double areaCalculator() {
-        double s = 0.5 * (side1 + side2 + side3);
+        double s = 0.5 * (side1 + side2 + side3);//I know what is it s, but better to use full name of variable
         double area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
         return area;
     }

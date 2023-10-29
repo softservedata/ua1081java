@@ -27,5 +27,6 @@ public class NumberChecker {
 
         String result = numberChecker.checkNumber(num1, num2, num3);
         System.out.println(result);
+        sc.close();// Close the scanner
     }
 }
