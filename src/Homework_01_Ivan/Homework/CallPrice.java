@@ -1,9 +1,11 @@
+package Homework_01_Ivan.Homework;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 /* 1. Flower bed is shaped like a circle. Calculate its perimeter and area. Input the radius from the console, and output obtained results.
-public class Main {
+public class Homework_01.Homework.CallPrice {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Please, input the radius value in cm: ");
@@ -20,7 +22,7 @@ public class Main {
 Read the value of name and output next question: “Where do you live, (name)?“ to the console.
 Read the value of address from the console and output the complete information.
 
-public class Main {
+public class Homework_01.Homework.CallPrice {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("What is your name? ");
@@ -35,7 +37,7 @@ public class Main {
 /*3. Three phone calls were made from different countries, each with a different cost per minute (c1, c2, and c3) and duration (t1, t2, and t3).
 Input all the source data from the console, calculate the cost of each call and the total cost, and output the results to the console.*/
 
-public class Main {
+public class CallPrice {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

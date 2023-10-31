@@ -1,6 +1,8 @@
+package Homework_01_Ivan.Practical_Task01.three_nums_IY.src;
+
 import java.util.Scanner;
 
-public class Main {
+public class Threenums {
     public static void main(String[] args) {
 
     Scanner sc = new Scanner(System.in);

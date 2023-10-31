@@ -1,6 +1,4 @@
-package employees;
-
-import static employees.Main.SCANNER;
+package Homework_02_Ivan.Practical_02;
 
 public class Employee {
 
@@ -23,7 +21,7 @@ public class Employee {
         this.rate = rate;
         this.hours = hours;
         // calculate and update the totalSum when a new Employee is created
-        totalSum += getSalary();
+        totalSum += getSalary() + getBonuses();
     }
 
      public double getSalary () {
@@ -39,18 +37,18 @@ public class Employee {
 
     public static void promptParameters(Employee employee) {
         System.out.println("Input name:");
-        String name = SCANNER.nextLine();
-        SCANNER.nextLine();
+        String name = MainEmployee.SCANNER.nextLine();
+        MainEmployee.SCANNER.nextLine();
         employee.setName(name);
 
         System.out.println("Input rate for employee '" + employee.getName() + "':");
-        double rate = SCANNER.nextDouble();
-        SCANNER.nextLine();
+        double rate = MainEmployee.SCANNER.nextDouble();
+        MainEmployee.SCANNER.nextLine();
         employee.setRate(rate);
 
         System.out.println("Input hours for employee '" + employee.getName() + "':");
-        double hours = SCANNER.nextDouble();
-        SCANNER.nextLine();
+        double hours = MainEmployee.SCANNER.nextDouble();
+        MainEmployee.SCANNER.nextLine();
         employee.setHours(hours);
     }
 

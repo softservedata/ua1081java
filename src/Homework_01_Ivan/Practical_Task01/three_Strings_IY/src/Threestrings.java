@@ -1,6 +1,8 @@
+package Homework_01_Ivan.Practical_Task01.three_Strings_IY.src;
+
 import java.util.Scanner;
 
-public class Main {
+public class Threestrings {
     public static void main(String[] args) {
     String firstLine;
     String secondLine;

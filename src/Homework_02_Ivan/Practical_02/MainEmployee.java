@@ -1,10 +1,10 @@
-package employees;
+package Homework_02_Ivan.Practical_02;
 
 import java.util.Scanner;
 
-import static employees.Employee.printEmployeeSalary;
+import static Homework_02_Ivan.Practical_02.Employee.printEmployeeSalary;
 
-public class Main {
+public class MainEmployee {
     static public final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class Main {
         Employee.promptParameters(employee3);
         Employee.setTotalSum(Employee.getTotalSum()+ employee3.getSalary());
 
-        System.out.println("Total salary = " + Employee.getTotalSum());
+        printEmployeeSalary();
     }
 
 
