@@ -1,4 +1,4 @@
-package com.softserve.edu03.ex1;
+package com.softserve.edu03;
 
 public class Helper {
     private static String message;

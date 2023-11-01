@@ -1,4 +1,4 @@
-package com.softserve.edu03.ex1;
+package com.softserve.edu03;
 
 class StudentDemo {
     public static void main(String[] args) {
