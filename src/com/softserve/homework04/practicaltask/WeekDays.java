@@ -10,7 +10,7 @@ public class WeekDays {
         int dayNumber = scanner.nextInt();
         String result;
 
-        switch (Integer.valueOf(dayNumber)) {
+        switch (dayNumber) {
             case 1:
                 result = "Monday\nПонеділок";
                 break;

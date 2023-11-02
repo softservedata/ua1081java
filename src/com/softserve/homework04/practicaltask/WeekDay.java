@@ -29,7 +29,7 @@ public enum WeekDay {
 
         int dayNumber = scanner.nextInt();
 
-        switch (Integer.valueOf(dayNumber)) {
+        switch (dayNumber) {
             case 1:
                 System.out.println(WeekDay.MONDAY.getEnUa());
                 break;
