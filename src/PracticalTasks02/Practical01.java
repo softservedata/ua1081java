@@ -1,4 +1,4 @@
-package PracticalTasks01;
+package PracticalTasks02;
 
 import java.util.Scanner;
 
