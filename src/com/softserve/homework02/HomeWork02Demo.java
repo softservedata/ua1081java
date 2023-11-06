@@ -12,7 +12,7 @@ public class HomeWork02Demo {
 
 //        Task 2 Write Java console application with method to find the smallest number among three integer numbers
 
-        Numbers.findSmallestNumber(3);
+        Numbers.findSmallestNumber(3,Numbers.scanner);
 
 //       Task 3 Create Console Application and add class called Person to the project. Class Person should consist of:
 //          • three private fields: firstName, lastName and birthYear (the birthday year);

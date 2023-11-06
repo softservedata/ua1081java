@@ -7,11 +7,10 @@ public class Person {
     private String firstName;
     private String lastName;
     private int birthYear;
-    Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
     LocalDate localDate = LocalDate.now();
 
     public Person() {
-
     }
 
     public Person(String firstName, String lastName) {
@@ -49,7 +48,17 @@ public class Person {
         int age = year - birthYear;
         System.out.println("Age of a person: " + age);
     }
-
+//public void getAge() {
+//        LocalDate currentDate = LocalDate.now(); // Get the current date
+//        int currentYear = currentDate.getYear(); // Get the current year
+//        int birthYear = birthDate.getYear(); // Get the birth year
+//        int age = currentYear - birthYear; // Calculate age
+//
+//        // If today's date is before the birthdate, subtract one year from the age
+//        if (currentDate.isBefore(birthDate.withYear(currentYear))) {
+//            age--;
+//        }
+//    }
     public void input() {
         System.out.println("Enter first name of person: ");
         String firstName = scanner.nextLine();
