@@ -2,10 +2,12 @@ package com.softserve.edu;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.Scanner;
 //import java.io.InputStreamReader;
 
-public class Main {
+public class Main { // implements Serializable {
 
     /**
      * <b>Super</b> Method.
