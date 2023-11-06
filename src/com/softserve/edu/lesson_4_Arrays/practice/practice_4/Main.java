@@ -17,7 +17,7 @@ public class Main {
         int depart = sc.nextInt();
         for (Employee employee : employees) {
             if (employee.getDepartmentNum() == depart) {
-                System.out.println("This is employee " + employee.getName() + " works in department " + employee.getDepartmentNum());
+                System.out.println("Employee " + employee.getName() + " works in department " + employee.getDepartmentNum());
             }
         }
         for (int i = 0; i < employees.length - 1; i++) {
