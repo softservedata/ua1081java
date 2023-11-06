@@ -1,7 +1,7 @@
 package com.softserve.homework05_oop_part1.task02_oop;
 
 public class Developer extends Employee {
-    private String position;
+    private final String position;
 
 
     public Developer(String name, int age, String average, double salary) {
