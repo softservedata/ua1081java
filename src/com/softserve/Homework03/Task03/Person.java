@@ -35,7 +35,7 @@ public class Person {
         return birthYear;
     }
 
-    public void setBirthYear(short birthYear) {
+    public void setBirthYear(short birthYear) {//better to use LocalDate
         if (birthYear > 0 && birthYear <= 2023) {
             this.birthYear = birthYear;
         }

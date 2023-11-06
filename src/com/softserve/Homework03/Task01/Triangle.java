@@ -1,5 +1,6 @@
 package com.softserve.Homework03.Task01;
 
+//For this task, it is advisable to also verify the existence of such a triangle.
 public class Triangle {
     private double sideA;
     private double sideB;
@@ -39,8 +40,9 @@ public class Triangle {
     }
 
     public double calculateArea() {
-        double p = (sideA + sideB + sideC) / 2.0;
-        double S = Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
+        double p = (sideA + sideB + sideC) / 2.0;//I know what is it p, but it is better to use full name.
+        double S = Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));//If you don't use S in the future, you can return this expression.
         return S;
     }
 }
+//For this task better check if such a triangle exists.

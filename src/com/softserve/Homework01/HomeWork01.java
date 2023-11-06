@@ -12,10 +12,10 @@ public class HomeWork01 {
     public static void task1(Scanner console){
         System.out.println("******* Task 1 *******");
         System.out.print(" Enter radius: ");
-        double R = console.nextDouble();
+        double R = console.nextDouble(); //better name is radius.
         console.nextLine();
-        System.out.println(" Perimeter circle = "+(2*R*Math.PI));
-        System.out.println(" Area circle = "+(Math.PI*R*R));
+        System.out.println(" Perimeter circle = "+(2*R*Math.PI));//Don`t forget formatting your code.
+        System.out.println(" Area circle = " + (Math.PI*R*R)); //If you use library Math, use Math.pow(R,2) instead R*R.
     }
 
     public static void task2(Scanner console){

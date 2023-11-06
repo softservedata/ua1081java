@@ -14,7 +14,7 @@ public class Task02 {
         }
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
-        for (int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length; i++) {//you can use here for-each loop
             if (numbers[i] > max) {
                 max = numbers[i];
             }
