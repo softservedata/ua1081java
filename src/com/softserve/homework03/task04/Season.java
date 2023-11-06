@@ -1,5 +1,5 @@
 package com.softserve.homework03.task04;
-
+// it's much better to use enum instead of static final fields
 public class Season {
     private final String currentSeason;
     private final String task;

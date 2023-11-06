@@ -6,7 +6,10 @@ import com.softserve.homework03.task03.Task03;
 import com.softserve.homework03.task04.Faculty;
 import com.softserve.homework03.task05.Dog;
 
+import java.util.Scanner;
+
 public class HomeWork03Demo {
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 //        Task 01  Write a program that prompts the user to input three float numbers. The program should check if all three numbers
 //        fall within the range of -5 and 5 (inclusive). If all three numbers are within this range, the program should output a

@@ -2,10 +2,10 @@ package com.softserve.homework03.task02;
 
 import java.util.Scanner;
 
-public class Task02 {
-    static Scanner scanner = new Scanner(System.in);
+import static com.softserve.homework03.HomeWork03Demo.scanner;
 
-    public static void findMinMaxNumbers(){
+public class Task02 {
+       public static void findMinMaxNumbers(){
         System.out.println("Enter three integer numbers: ");
         int num1 = scanner.nextInt();
         int num2 = scanner.nextInt();
@@ -25,5 +25,7 @@ public class Task02 {
             max = num3;
         }
         System.out.println("Min number: " + min + "\n" + "Max number: " + max);
+        scanner.nextLine();
     }
+
 }
