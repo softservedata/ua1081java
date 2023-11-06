@@ -6,8 +6,7 @@ public class Task04Faculty {
     public enum Season {
         SUMMER("chilling", "summer"),
         WINTER("exams", "winter"),
-        SPRING("studding", "spring" +
-                ""),
+        SPRING("studding", "spring"),
         AUTUMN("studding", "autumn");
         private final String name;
         private final String stage;
