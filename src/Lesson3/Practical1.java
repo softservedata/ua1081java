@@ -5,14 +5,13 @@ import java.util.Scanner;
 public class Practical1 {
 
     public static double getTotal(double num1, double num2) {
-        double sum = num1 + num2;
-        return sum;
+
+        return num1 + num2;
 
     }
 
     public static double getAverage(double num1, double num2) {
-        double sum = (num1 + num2) / 2;
-        return sum;
+        return (num1 + num2) / 2;
     }
 
     public static void main(String[] args) {
