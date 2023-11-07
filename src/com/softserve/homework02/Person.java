@@ -9,7 +9,7 @@ public class Person {
     private String firstName;
     private String lastName;
     private int birthYear;
-
+   static Scanner scanner = new Scanner(System.in);
     public Person() {
 
     }
@@ -20,11 +20,12 @@ public class Person {
     }
 
     public int getAge() {
-        return Year.now().getValue() - birthYear;
+        return Year.now().getValue() - birthYear;//think about the case when the user enters a year that is greater than the current one
+        //or year of birth is negative
+        //or correct age need decrement by 1 because the person has not yet had a birthday this year
     }
-
     public void inputInformationOfPerson() {
-        Scanner scanner = new Scanner(System.in);
+
         System.out.print(" Enter first name: ");
         setFirstName(scanner.nextLine());
         System.out.print(" Enter last name: ");
@@ -75,19 +76,19 @@ public class Person {
         while (!exit) {
             System.out.println("Select the desired menu\n 1. Input information about person\n 2. Get information about person\n 3. Change information about person\n 4. Exit");
             Scanner scanner = new Scanner(System.in);
-            int menuinput = scanner.nextInt();
-            if (menuinput == 1) {
+            int menuInput = scanner.nextInt();//camelCase
+            if (menuInput == 1) {
                 for (int i = 0; i < personArray.length; i++) {
                     System.out.println("insert information about " + (i + 1) + " person");
                     personArray[i] = new Person();
                     personArray[i].inputInformationOfPerson();
                 }
-            } else if (menuinput == 2) {
+            } else if (menuInput == 2) {
                 for (int i = 0; i < personArray.length; i++) {
                     System.out.println("get information about " + (i + 1) + " person");
                     personArray[i].outputInformationOfPerson();
                 }
-            } else if (menuinput == 3) {
+            } else if (menuInput == 3) {
                 System.out.println("Select person for change");
                 Scanner sr = new Scanner(System.in);
                 Scanner scannerInt = new Scanner(System.in);
@@ -103,7 +104,7 @@ public class Person {
                         personArray[i].outputInformationOfPerson();
                     }
                 }
-            } else if (menuinput == 4) {
+            } else if (menuInput == 4) {
                 System.out.println("Have a nice day! Buy!");
                 exit = true;
             }
