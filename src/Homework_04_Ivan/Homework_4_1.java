@@ -20,7 +20,7 @@ public class Homework_4_1 {
 
         // Calculate Days in the Month
         Scanner scanner = new Scanner(System.in);
-        /*
+
         System.out.print("Enter a month number (1-12): ");
         int monthNumber = scanner.nextInt();
         int days = MonthDaysApp.calculateDaysInMonth(monthNumber);
@@ -50,7 +50,7 @@ public class Homework_4_1 {
             System.out.println("Product of the last five non-positive numbers: " + product);
         } else {
             System.out.println("No suitable numbers found.");
-        } */
+        }
 
         // five integer numbers
 
