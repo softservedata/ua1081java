@@ -1,20 +1,20 @@
-package PracticalTasks03.Practical01;
+package PracticalTasks3.Practical1;
 
-import static PracticalTasks03.Practical01.MainPractical01.SCANNER;
+import static PracticalTasks3.Practical1.Main.SCANNER;
 
-public class Practical01 {
+public class SumAvg {
     static private int totalSum;
 
     public static int num1;
     public static int num2;
 
-    public Practical01(int num1, int num2) {
-        Practical01.num1 = num1;
-        Practical01.num2 = num2;
+    public SumAvg(int num1, int num2) {
+        SumAvg.num1 = num1;
+        SumAvg.num2 = num2;
         totalSum = num1 + num2;
     }
 
-    public Practical01() {
+    public SumAvg() {
 
     }
 
@@ -22,22 +22,22 @@ public class Practical01 {
         return (double) totalSum / 2;
     }
     public static void printAverage() {
-        System.out.println("The average of " + Practical01.num1 + " and " + Practical01.num2 + " is " + Practical01.getAverageSum());
+        System.out.println("The average of " + SumAvg.num1 + " and " + SumAvg.num2 + " is " + SumAvg.getAverageSum());
     }
 
     static public int getTotalSum(){
         return totalSum;
     }
     public static void printTotal() {
-        System.out.println("The sum of " + Practical01.num1 + " and " + Practical01.num2 + " is " + Practical01.getTotalSum());
+        System.out.println("The sum of " + SumAvg.num1 + " and " + SumAvg.num2 + " is " + SumAvg.getTotalSum());
     }
 
-    public static void promptNum1(Practical01 num1) {
-        System.out.println("Enter first number:");
+    public static void promptNum1(SumAvg num1) {
+        System.out.print("Enter first number: ");
         num1.setNum1(SCANNER.nextInt());
     }
-    public static void promptNum2(Practical01 num2) {
-        System.out.println("Enter the second number:");
+    public static void promptNum2(SumAvg num2) {
+        System.out.print("Enter the second number: ");
         num2.setNum2(SCANNER.nextInt());
     }
 
@@ -55,9 +55,9 @@ public class Practical01 {
     }
 
     public void setNum1(int num1) {
-        totalSum -= Practical01.num1;
-        Practical01.num1 = num1;
-        totalSum += Practical01.num1;
+        totalSum -= SumAvg.num1;
+        SumAvg.num1 = num1;
+        totalSum += SumAvg.num1;
     }
 
     public int getNum2() {
@@ -65,9 +65,9 @@ public class Practical01 {
     }
 
     public void setNum2(int num2) {
-        totalSum -= Practical01.num2;
-        Practical01.num2 = num2;
-        totalSum += Practical01.num2;
+        totalSum -= SumAvg.num2;
+        SumAvg.num2 = num2;
+        totalSum += SumAvg.num2;
     }
 //    public static double getNumber(Scanner scanner, String prompt){
 //        System.out.println(prompt);

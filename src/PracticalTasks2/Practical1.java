@@ -1,8 +1,8 @@
-package PracticalTasks02;
+package PracticalTasks2;
 
 import java.util.Scanner;
 
-public class Practical01 {
+public class Practical1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input text:");

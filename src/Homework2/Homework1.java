@@ -1,8 +1,8 @@
-package Homework02;
+package Homework2;
 
 import java.util.Scanner;
 
-public class Homework01 {
+public class Homework1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the radius:");
