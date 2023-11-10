@@ -47,11 +47,16 @@ public class Car {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the year of production (1999, 2012, 2016, 2022): ");
         int yearOfProduction = scanner.nextInt();
+        boolean found = false;
 
         // filtering by year and printing
         for (Car car : cars) {
             if (car.getYear() == yearOfProduction) {
                 System.out.println("Car: " + car.getType() + ", Year: " + car.getYear() + ", Engine:" + car.getEngine());
+                found = true;
+            }
+            if (!found) {
+                System.out.println("No cars found from the year" + yearOfProduction);
             }
         }
         // sorting cars by year of production
