@@ -10,7 +10,6 @@ public class GuessTheNumber {
         int minNumber = 0;
         int maxNumber = 100;
         int randomNumber = (int)Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
-        //System.out.println(randomNumber);
 
         System.out.print("I guessed a number from 0 to 100.\n" +
                 "Try to guess it!\n" +
