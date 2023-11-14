@@ -1,5 +1,7 @@
 package com.softserve.homework07.homework.HW1;
 
+import java.util.Comparator;
+
 public class SalariedEmployee extends Employee implements Payment {
     private String socialSecurityNumber;
     private double fixedMonthlyPayment;
@@ -37,9 +39,9 @@ public class SalariedEmployee extends Employee implements Payment {
 
     @Override
     public String toString() {
-        return "Salaried Employee Info:\n    Name: " + getName() +
-                "\n    ID: " + getEmployeeId() +
-                "\n    Social Security Number: " + socialSecurityNumber +
-                "\n    Average Monthly Salary: " + getAverageMonthlySalary();
+        return "Salaried Employee Info:\n\tName: " + getName() +
+                "\n\tID: " + getEmployeeId() +
+                "\n\tSocial Security Number: " + socialSecurityNumber +
+                "\n\tAverage Monthly Salary: " + getAverageMonthlySalary();
     }
 }

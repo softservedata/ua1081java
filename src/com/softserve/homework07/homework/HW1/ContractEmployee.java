@@ -1,9 +1,27 @@
 package com.softserve.homework07.homework.HW1;
 
+import java.util.Comparator;
+
 public class ContractEmployee extends Employee implements Payment {
+
+    public class ByHourlyRateAsc implements Comparator<ContractEmployee> {
+        @Override
+        public int compare(ContractEmployee emp1, ContractEmployee emp2) {
+            if(emp1.getHourlyRate() < emp2.getHourlyRate())
+                return -1;
+            else if(emp1.getHourlyRate() > emp2.getHourlyRate())
+                return 1;
+            return 0;
+        }
+    }
+
     private String federalTaxIdNumber;
     private double hourlyRate;
     private int hoursWorked;
+
+    public ContractEmployee() {
+        super();
+    }
 
     public ContractEmployee(String name, String employeeId) {
         super(name, employeeId);
@@ -47,9 +65,10 @@ public class ContractEmployee extends Employee implements Payment {
 
     @Override
     public String toString() {
-        return "Contract Employee Info:\n    Name: " + getName() +
-                "\n    ID: " + getEmployeeId() +
-                "\n    Social Security Number: " + federalTaxIdNumber +
-                "\n    Average Monthly Salary: " + getAverageMonthlySalary();
+        return "Contract Employee Info:\n\tName: " + getName() +
+                "\n\tID: " + getEmployeeId() +
+                "\n\tSocial Security Number: " + federalTaxIdNumber +
+                "\n\tHourly Rate: " + hourlyRate +
+                "\n\tAverage Monthly Salary: " + getAverageMonthlySalary();
     }
 }

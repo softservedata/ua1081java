@@ -1,8 +1,47 @@
 package com.softserve.homework07.homework.HW1;
 
+import java.util.Comparator;
+
 public abstract class Employee implements Comparable<Employee>{
+
+    public static class ByNameAsc implements Comparator<Employee> {
+        @Override
+        public int compare(Employee emp1, Employee emp2) {
+            return emp1.getName().compareTo(emp2.getName());
+        }
+    }
+
+    public static class ByNameDesc implements Comparator<Employee> {
+        @Override
+        public int compare(Employee emp1, Employee emp2) {
+            return -emp1.getName().compareTo(emp2.getName());
+        }
+    }
+
+    public static class ByAverageSalaryAsc implements Comparator<Employee> {
+        @Override
+        public int compare(Employee emp1, Employee emp2) {
+            if(emp1.getAverageMonthlySalary() < emp2.getAverageMonthlySalary())
+                return -1;
+            else if(emp1.getAverageMonthlySalary() > emp2.getAverageMonthlySalary())
+                return 1;
+            return 0;
+        }
+    }
+
+    public static class ByAverageSalaryDesc implements Comparator<Employee> {
+        @Override
+        public int compare(Employee emp1, Employee emp2) {
+            if(emp1.getAverageMonthlySalary() > emp2.getAverageMonthlySalary())
+                return -1;
+            else if(emp1.getAverageMonthlySalary() < emp2.getAverageMonthlySalary())
+                return 1;
+            return 0;
+        }
+    }
+
     private String name;
-    private final String employeeId;
+    private String employeeId;
     private double averageMonthlySalary;
 
     public Employee(String name, String employeeId) {
@@ -10,8 +49,7 @@ public abstract class Employee implements Comparable<Employee>{
         this.employeeId = employeeId;
     }
 
-    public Employee(String employeeId) {
-        this.employeeId = employeeId;
+    public Employee() {
     }
 
     public String getName() {
@@ -24,6 +62,10 @@ public abstract class Employee implements Comparable<Employee>{
 
     public String getEmployeeId() {
         return employeeId;
+    }
+
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
     }
 
     public double getAverageMonthlySalary() {

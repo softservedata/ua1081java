@@ -25,10 +25,33 @@ public class Main {
             ((Payment) employee).calculatePay();
         }
 
-        Arrays.sort(employeesArray);
+        //Sort by averageMonthlySalary (in descending order) using overridden compareTo method (from Employee class)
+        //Arrays.sort(employeesArray);
+
+        //Sort by averageMonthlySalary (in descending order) using overridden compare method from static ByAverageSalaryDesc inner class (from Employee class)
+        Arrays.sort(employeesArray, new Employee.ByAverageSalaryDesc());
+
+        //Sort by averageMonthlySalary (in ascending order) using overridden compare method from static ByAverageSalaryAsc inner class (from Employee class)
+        //Arrays.sort(employeesArray, new Employee.ByAverageSalaryAsc());
+
+        //Sort by name (in ascending order) using overridden compare method from static ByNameAsc inner class (from Employee class)
+        //Arrays.sort(employeesArray, new Employee.ByNameAsc());
+
+        //Sort by name (in ascending order) using overridden compare method from static ByNameAsc inner class (from Employee class)
+        //Arrays.sort(employeesArray, new Employee.ByNameDesc());
 
         for (Employee employee : employeesArray) {
             System.out.println(employee.toString());
         }
+
+        //Sort by hourlyRate (in ascending order) using overridden compare method from non-static ByHourlyRateAsc inner class (from ContractEmployee class)
+        /*
+        ContractEmployee[] contractEmployeesArray = new ContractEmployee[] {firstContractEmployee,secondContractEmployee};
+        Arrays.sort(contractEmployeesArray, new ContractEmployee(). new ByHourlyRateAsc());
+        System.out.println("\n");
+        for (Employee employee : contractEmployeesArray) {
+            System.out.println(employee.toString());
+        }
+         */
     }
 }
