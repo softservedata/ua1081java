@@ -37,7 +37,7 @@ public class Main {
         //Sort by name (in ascending order) using overridden compare method from static ByNameAsc inner class (from Employee class)
         //Arrays.sort(employeesArray, new Employee.ByNameAsc());
 
-        //Sort by name (in ascending order) using overridden compare method from static ByNameAsc inner class (from Employee class)
+        //Sort by name (in descending order) using overridden compare method from static ByNameDesc inner class (from Employee class)
         //Arrays.sort(employeesArray, new Employee.ByNameDesc());
 
         for (Employee employee : employeesArray) {
