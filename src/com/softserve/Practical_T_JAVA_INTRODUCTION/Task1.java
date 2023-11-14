@@ -1,4 +1,4 @@
-package com.softserve.HomeWorke_JAVA_INTRODUCTION;
+package com.softserve.Practical_T_JAVA_INTRODUCTION;
 
 import java.io.BufferedReader;
 import java.io.IOException;
