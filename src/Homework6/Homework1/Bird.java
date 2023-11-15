@@ -98,7 +98,7 @@ class Kiwi extends NonFlyingBird {
     }
 }
 
-class BirdIfo {
+class BirdMain {
     public static void main(String[] args) {
         Eagle eagle = new Eagle("Dark brown", true);
         Swallow swallow = new Swallow("Dark blue and pale beige", true);
