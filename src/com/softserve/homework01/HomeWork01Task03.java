@@ -31,6 +31,7 @@ public class HomeWork01Task03 {
         System.out.println("Abroad call cost: " + cost3 + " $");
         double totalCost = cost1 + cost2 + cost3;
         System.out.println("Total call cost: " + totalCost + " $");
+        sc.close();//don't forget to close scanner
     }
 
 }

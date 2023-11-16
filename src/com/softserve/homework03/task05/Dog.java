@@ -1,9 +1,9 @@
 package com.softserve.homework03.task05;
-
+// not correct
 public class Dog {
-    private String name;
-    private static String BREED;
-    private int age;
+    private final String name;
+    private static String BREED;// it's need to use enum instead of static field
+    private final int age;
 
     public Dog(String name, int age) {
         this.name = name;

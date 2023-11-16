@@ -7,12 +7,12 @@ import com.softserve.homework02.task03.Person;
 public class HomeWork02Demo {
     public static void main(String[] args) {
 //        Task 1 Write Java console application with method to calculate the area of a triangle.
-
+        System.out.println("Demo of task 1");
         Triangle.calculateAreaOfTriangle();
 
 //        Task 2 Write Java console application with method to find the smallest number among three integer numbers
-
-        Numbers.findSmallestNumber(3);
+        System.out.println("Demo of task 2");
+        Numbers.findSmallestNumber(3,Numbers.scanner);
 
 //       Task 3 Create Console Application and add class called Person to the project. Class Person should consist of:
 //          • three private fields: firstName, lastName and birthYear (the birthday year);

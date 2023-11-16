@@ -16,6 +16,7 @@ public class HomeWork01Task02 {
         System.out.println("Where do you live, " + name + "?");
         String address = sc.nextLine();
         System.out.println("Your name is " + name + " and you live at this address: " + address);
+        sc.close();//don't forget to close scanner
     }
 
 }

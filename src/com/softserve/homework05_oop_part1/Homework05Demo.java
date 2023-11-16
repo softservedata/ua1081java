@@ -15,15 +15,21 @@ public class Homework05Demo {
 //        4. In main () method create an array Bird and add different birds to it.Call fly () method for
 //        all of it.Output the information about each type of created bird.
 
-
-        Eagle eagle = new Eagle("Brown",true);
-        Swallow swallow = new Swallow("Black",false);
+        Bird[] arr = {new Eagle("Brown", true),
+                new Swallow("Black", false),
+                new Penguin("White", true),
+                new Kiwi("Green", false)};
+        // you can create an array of Bird objects and then call fly() method for each of them
+        Eagle eagle = new Eagle("Brown", true);
+        Swallow swallow = new Swallow("Black", false);
         Penguin penguin = new Penguin("White", true);
-        Kiwi kiwi = new Kiwi("Green",false);
+        Kiwi kiwi = new Kiwi("Green", false);
         Bird[] array = new Bird[]{eagle, swallow, penguin, kiwi};
-        for (int i = 0; i < array.length; i++) {
-            array[i].fly();
-            System.out.println(array[i] + "\n");
+
+
+        for (Bird bird : array) {
+            bird.fly();
+            System.out.println(bird + "\n");
         }
 
 
@@ -39,7 +45,15 @@ public class Homework05Demo {
 
         Employee employee = new Employee("Taras", 32, 32735.35);
         Developer developer = new Developer("Taras", 32, "Java developer", 32735.35);
+
+
         System.out.println(employee.report());
         System.out.println(developer.report());
+
+        // or you can create an array of Employee objects and then call report() method for each of them
+//        Employee[] employees = {employee, developer};
+//        for (Employee emp : employees) {
+//            System.out.println(emp.report());
+//        }
     }
 }
