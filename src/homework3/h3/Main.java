@@ -28,6 +28,8 @@ public class Main {
       Person person5 = new Person();
       Person.input(person5);
       Person.output(person5);
+      person1.changeName();
+
 
 
 

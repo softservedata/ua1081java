@@ -66,12 +66,12 @@ public class Person {
     public void setBirthYear(int birthYear) {
         this.birthYear = birthYear;
     }
-    public void changeName(String firstName, String lastName) {
-        if (firstName != null) {
-            setFirstName(firstName);
-        }
-        if (lastName != null) {
-            setLastName(lastName);
-        }
+    public void changeName() {
+        System.out.println("Input new first name:");
+        firstName = Main.SCANNER.nextLine();
+        setFirstName(firstName);
+        System.out.println("Input new last name:");
+        lastName = Main.SCANNER.nextLine();
+        setLastName(lastName);
     }
 }
