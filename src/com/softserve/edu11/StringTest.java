@@ -40,6 +40,7 @@ public class StringTest {
        // System.out.println(a.compareToIgnoreCase(A));
 
 
+
 }
 
     public static String toTitleCase(String s){
