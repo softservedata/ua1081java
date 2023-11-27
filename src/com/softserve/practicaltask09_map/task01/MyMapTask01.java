@@ -1,17 +1,17 @@
 package com.softserve.practicaltask09_map.task01;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+
 
 import static com.softserve.practicaltask09_map.task01.UtilityForMap.provideMoreComprehensiveInfo;
 
 public class MyMapTask01 {
     public static void main(String[] args) {
         Map<Integer, String> employeeMap = new HashMap<>();
-        employeeMap.put(1, "Orest");
+        employeeMap.put(25, "Orest");
         employeeMap.put(2, "Pavlo");
-        employeeMap.put(3, "Olha");
+        employeeMap.put(36, "Olha");
         employeeMap.put(4, "Artem");
         employeeMap.put(5, "Olha");
         employeeMap.put(6, "Pavlo");
@@ -57,6 +57,17 @@ public class MyMapTask01 {
         for (Map.Entry<Integer, Employee> entry : updatedMap.entrySet()) {
             System.out.println("Id : " + entry.getKey() + entry.getValue());
         }
+
+
+        System.out.println("Additional task3 practical task 2**");
+        UtilityForMap.editEmployeeData(updatedMap);
+        for (Map.Entry<Integer, Employee> entry : updatedMap.entrySet()) {
+            System.out.println("Id : " + entry.getKey() + entry.getValue());
+        }
+
+
+        System.out.println("Additional task4 practical task 2**");
+        UtilityForMap.sortMapByDifferentCriteria(updatedMap);
 
     }
 }
