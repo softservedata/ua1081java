@@ -13,7 +13,8 @@ package com.softserve.edu.lesson_6_OOP_Concepts2.homework.hw_1;
      }
 
     abstract String getName();
-
+//calculatePay() method can be  implemented here, and then it will be inherited by all subclasses
+     //or Override it in subclasses
 
      @Override
      public int compareTo(Employee o) {
