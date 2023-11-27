@@ -33,7 +33,7 @@ public class Person {
     public void output() {
         System.out.println("Name: " + this.name);
         System.out.println("Surname: " + this.surname);
-        System.out.println("Bith Year: " + this.birthYear);
+        System.out.println("Birth Year: " + this.birthYear);
         System.out.println("Age: " + getAge());
         System.out.println();
     }
@@ -92,3 +92,15 @@ public class Person {
                 '}';
     }
 }
+//Input Method Dependency:
+// The input method relies on a scanner from the Main class (Main.SCANNER).
+// This creates a tight coupling between your Person class and the Main class.
+// It would be better to pass the Scanner object as a parameter to the input method to reduce dependency
+// and increase the reusability of the Person class.
+//
+
+//The input and output methods are handling both input/output operations and setting/getting the properties
+// of a Person.
+// It might be better to separate these concerns.
+// For example, you could have a separate class or methods in the Main class to handle user interaction,
+// and keep the Person class focused on representing a person.
