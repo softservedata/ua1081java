@@ -8,9 +8,9 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter how much a minute of call costs in the 1st country:");
-        double firts_min = sc.nextDouble();
+        double firts_min = sc.nextDouble();//its not convenient name for variable -->firstMinute
         System.out.println("Сall duration in the 1st country:");
-        double cost_first = sc.nextDouble();
+        double cost_first = sc.nextDouble();//the same as above -->costFirst
         System.out.println("Enter how much a minute of call costs in the 2nd country:");
         double second_min = sc.nextDouble();
         System.out.println("Сall duration in the 2nd country:");
