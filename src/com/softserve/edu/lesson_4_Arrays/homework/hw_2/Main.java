@@ -7,7 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String answer;
         do {
-            System.out.println("Please enter first nummber");
+            System.out.println("Please enter first number");
             double first = sc.nextDouble();
             System.out.println("Please enter second number");
             double second = sc.nextDouble();

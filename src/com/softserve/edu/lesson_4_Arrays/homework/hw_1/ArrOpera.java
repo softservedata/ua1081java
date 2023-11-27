@@ -2,11 +2,12 @@ package com.softserve.edu.lesson_4_Arrays.homework.hw_1;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+//better to do two separate classes for logic and demonstration
 public class ArrOpera {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter 5 numbers");
+        Scanner sc = new Scanner(System.in);//scanner should be closed after using or better to do it static
+        System.out.println("Enter 5 numbers");//more informative message about what user should enter
+
         int[] arr = new int[5];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
@@ -22,19 +23,29 @@ public class ArrOpera {
 
     }
 
+    /**
+     * Method returns second positive number in array
+     * @param arr
+     * @return
+     */
     public static int findSecondPositivePosition(int[] arr) {
         int posCounter = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > 0) {
+        for (int j : arr) {
+            if (j > 0) {
                 posCounter++;
             }
             if (posCounter == 2) {
-                return arr[i];
+                return j;
             }
         }
         return -1;
 
     }
+    /**
+     * Method returns min value and position of min value in array
+     * @param arr
+     * @return
+     */
 
     public static int[] findMinValueAndPosition(int[] arr) {
         int minValue = Integer.MAX_VALUE;
@@ -49,17 +60,28 @@ public class ArrOpera {
 
     }
 
+    /**
+     * Method returns product of even numbers in array
+     * @param arr
+     * @return
+     */
 
     public static int evenProd(int[] arr) {
-        int prod = 1;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == 0) {
+        int prod = 1;//what is prod? better to use more informative name
+        for (int j : arr) {
+            if (j == 0) {
                 continue;
             }
-            if (arr[i] % 2 == 0) {
-                prod *= arr[i];
+            if (j % 2 == 0) {
+                prod *= j;
             }
         }
         return prod;
     }
 }
+//Your method findSecondPositivePosition returns -1 if it doesn't find a second positive number,
+// which is good.
+// However, it might be helpful to print a message to the user indicating this situation for better clarity.
+//
+//In evenProd, if there are no even numbers (or they are all zeros),
+// the method will return 1, which might be misleading.

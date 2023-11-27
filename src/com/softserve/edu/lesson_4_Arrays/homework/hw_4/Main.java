@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Random random = new Random();
-        int number = random.nextInt(1, 10);
-        int entered;
+        int number = random.nextInt(1, 11);//bound is exclusive
+        int entered = 0;
         Scanner sc = new Scanner(System.in);
-//        System.out.println(number);
+       System.out.println(number);
         do {
             System.out.println("Enter a number from 1 to 10 and try to guess it");
             entered = sc.nextInt();

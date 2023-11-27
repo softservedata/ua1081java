@@ -17,7 +17,9 @@ public class Main {
         for (Car car : cars) {
             if (car.getYear() == year) {
                 System.out.println(car);
-            }
+            }//what if there is no car with such year?
+            //add else statement
+
         }
         Car temp;
         for (int i = 0; i < cars.length - 1; i++) {
