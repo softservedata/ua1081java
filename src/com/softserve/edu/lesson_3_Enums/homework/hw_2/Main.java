@@ -15,10 +15,10 @@ public class Main {
         int third = sc.nextInt();
 
         int max = Math.max(Math.max(first, second), third);
-        int min = Math.min(Math.min(first,second),third);
+        int min = Math.min(Math.min(first, second), third);
 
-        System.out.println("Max = " + max );
+        System.out.println("Max = " + max);
         System.out.println("Min = " + min);
-
+        sc.close();//don't forget to close scanner
     }
 }
