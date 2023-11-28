@@ -17,7 +17,7 @@ public class Main {
         oldestDog(bars, vinil, srBars);
 
     }
-
+//next both methods better to move to Dog class
     public static void oldestDog(Dog dog_1, Dog dog_2, Dog dog_3) {
         if (dog_1.getAge() >= dog_2.getAge() && dog_1.getAge() >= dog_3.getAge()) {
             System.out.println(dog_1.getName() + " it is oldest dog and has breed " + dog_1.getBreed());

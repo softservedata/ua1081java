@@ -15,7 +15,7 @@ private String name;
 
     @Override
     public int calculatePay() {
-        return rate ;
+        return rate;
     }
 
     @Override

@@ -25,6 +25,6 @@ public class Employee {
 
     public String report(){
         return String.format("Name: %s, Age: %d, " +
-                "Salary: \u20B4 %.2f. ", name, age, salary);
+                "Salary: ₴ %.2f. ", name, age, salary);
     }
 }
