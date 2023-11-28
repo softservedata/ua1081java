@@ -1,25 +1,30 @@
 package com.softserve.edu.lesson_4_Arrays.homework.hw_1;
 
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ArrOpera {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter 5 numbers");
-        int[] arr = new int[5];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = sc.nextInt();
+        boolean x = false;
+        try {
+            System.out.println("Enter 5 numbers");
+            int[] arr = new int[5];
+            for (int i = 0; i < arr.length; i++) {
+                arr[i] = sc.nextInt();
+            }
+
+
+            int secondPositivePosition = findSecondPositivePosition(arr);
+            System.out.println("Second position " + secondPositivePosition);
+            int[] minValueAndPosition = findMinValueAndPosition(arr);
+            System.out.println("Min value and position " + Arrays.toString(minValueAndPosition));
+            int evenProd = evenProd(arr);
+            System.out.println("Even prod " + evenProd);
+        } catch (InputMismatchException e) {
+            System.err.println("Please enter only numbers");
         }
-
-        int secondPositivePosition = findSecondPositivePosition(arr);
-        System.out.println(secondPositivePosition);
-        int[] minValueAndPosition = findMinValueAndPosition(arr);
-        System.out.println(Arrays.toString(minValueAndPosition));
-        int evenProd = evenProd(arr);
-        System.out.println(evenProd);
-
-
     }
 
     public static int findSecondPositivePosition(int[] arr) {
@@ -63,3 +68,4 @@ public class ArrOpera {
         return prod;
     }
 }
+

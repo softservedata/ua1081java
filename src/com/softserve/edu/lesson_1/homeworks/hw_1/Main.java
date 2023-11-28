@@ -1,5 +1,6 @@
 package com.softserve.edu.lesson_1.homeworks.hw_1;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -7,20 +8,28 @@ public class Main {
         // Perimetr and area
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter radius");
-        double n = sc.nextDouble();
-        System.out.println("Select whether you want to calculate perimeter(P) or Area(A) // P or A :");
-        String choice = sc.next();
-        System.out.println("Result:");
-        if (choice.equals("P") || choice.equals("p") ) {
-            double p = 2 * 3.1415926 * n;
-            System.out.println(p);
-        }
-        if (choice.equals("A") || choice.equals("a")) {
-            double a = 3.1415926 * (n * n);
-            System.out.println(a);
-        }
+        boolean x = false;
+        while (!x) {
+            try {
+                System.out.println("Please enter radius");
+                double radius = sc.nextDouble();
+                System.out.println("Select whether you want to calculate perimeter(P) or Area(A) // P or A :");
+                String choice = sc.next();
+                if (choice.equalsIgnoreCase("P")) {
+                    double p = 2 * 3.1415926 * radius;
+                    System.out.println("Result: " + p);
+                    x = true;
+                }
+                if (choice.equalsIgnoreCase("A")) {
+                    double a = 3.1415926 * (radius * radius);
+                    System.out.print("Result: " + a);
+                    x = true;
 
-
+                }
+            } catch (InputMismatchException e) {
+                System.err.println("Please enter valid");
+                sc = new Scanner(System.in);
+            }
+        }
     }
 }

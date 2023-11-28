@@ -1,22 +1,31 @@
 package com.softserve.edu.lesson_4_Arrays.homework.hw_1;
 
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CalculateInt {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter 10 int numbers: ");
-        int[] arr = new int[10];
+        boolean x = false;
+        while (!x) {
+            try {
+                System.out.println("Please enter 10 int numbers: ");
+                int[] arr = new int[10];
 
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = sc.nextInt();
+                for (int i = 0; i < arr.length; i++) {
+                    arr[i] = sc.nextInt();
+                }
+
+                int calculate = calculate(arr);
+                System.out.println(calculate);
+                x = true;
+            } catch (InputMismatchException e) {
+                System.err.println("Please enter only numbers");
+                sc = new Scanner(System.in);
+            }
         }
-
-        int calculate = calculate(arr);
-        System.out.println(calculate);
-
     }
 
     static int calculate(int[] arr) {

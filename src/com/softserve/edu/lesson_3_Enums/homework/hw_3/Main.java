@@ -11,12 +11,12 @@ public class Main {
         for (HTTPError value : HTTPError.values()) {
             if (value.getCode() == code) {
                 System.out.println(code + " - " + value.getName());
-
             }
-        }
 
+        }
     }
 }
+
 
 
 
