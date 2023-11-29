@@ -37,7 +37,11 @@ public class Dog {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if(age > 0 && age <= 20) {
+            this.age = age;
+        }else {
+            System.err.println("Please enter age between 0 and 20");
+        }
     }
 
     @Override

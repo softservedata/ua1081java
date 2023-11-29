@@ -9,7 +9,7 @@ public class Person {
     private String surname;
     private int birthYear;
 
-    public int getAge() {
+    public int getAge(){
         int year = LocalDate.now().getYear();
         if ((this.birthYear > 0) && (this.birthYear <= year)) {
             return year - this.birthYear;
@@ -21,13 +21,11 @@ public class Person {
 
     public void input() {
         System.out.println("Enter name:");
-        this.name = Main.SCANNER.nextLine();
+        name = Main.SCANNER.next();
         System.out.println("Enter surname:");
-        this.surname = Main.SCANNER.nextLine();
+        surname = Main.SCANNER.next();
         System.out.println("Enter birth year");
-        this.birthYear = Main.SCANNER.nextInt();
-        Main.SCANNER.nextLine();
-
+        birthYear = Main.SCANNER.nextInt();
     }
 
     public void output() {

@@ -1,14 +1,16 @@
 package com.softserve.edu.lesson_3_Enums.homework.hw_5;
 
+import java.util.InputMismatchException;
+
 public class Main {
     public static void main(String[] args) {
-
         Dog bars = new Dog();
-        bars.setName("Bars");
+        bars.setName("Max");
         bars.setBreed(Breed.BULLDOG);
-        bars.setAge(10);
+        bars.setAge(8);
+
         Dog vinil = new Dog("Vinil", Breed.BEAGLE, 8);
-        Dog srBars = new Dog("Max", Breed.POODLE, 6);
+        Dog srBars = new Dog("Max", Breed.POODLE, 10);
 
 
         uniqueName(bars, vinil, srBars);
@@ -17,7 +19,7 @@ public class Main {
     }
 //next both methods better to move to Dog class
     public static void oldestDog(Dog dog_1, Dog dog_2, Dog dog_3) {
-        if (dog_1.getAge() > dog_2.getAge() && dog_1.getAge() > dog_3.getAge()) {
+        if (dog_1.getAge() >= dog_2.getAge() && dog_1.getAge() >= dog_3.getAge()) {
             System.out.println(dog_1.getName() + " it is oldest dog and has breed " + dog_1.getBreed());
         } else if (dog_2.getAge() > dog_1.getAge() && dog_2.getAge() > dog_3.getAge()) {
             System.out.println(dog_2.getName() + " it is oldest dog and has breed " + dog_2.getBreed());
