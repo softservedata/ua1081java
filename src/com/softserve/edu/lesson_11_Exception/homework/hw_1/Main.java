@@ -21,7 +21,7 @@ public class Main {
 
 
     }
-
+    //it's not correct, did you try divide by zero? what will happen?
     static void dev(double a, double b) {
         if (b == 0) {
             throw new ArithmeticException("The second number cant be 0");
