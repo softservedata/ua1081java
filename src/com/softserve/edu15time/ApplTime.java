@@ -77,6 +77,7 @@ public class ApplTime {
 		//
 		ZoneId currentZone = ZoneId.systemDefault();
 		System.out.println("CurrentZone: " + currentZone);
+        System.out.println("currentZone.getRules() = " + currentZone.getRules());
 		// System.out.println(ZoneId.getAvailableZoneIds());
 		// ZoneId.getAvailableZoneIds().forEach(System.out::println);
 		//
@@ -89,14 +90,15 @@ public class ApplTime {
 		System.out.println("zone2.getRules() = " + zone2.getRules());
 		*/
 		/*-
-		LocalDateTime a = LocalDateTime.of(2023, 2, 04, 12, 01);
+		LocalDateTime a = LocalDateTime.of(2023, 11, 04, 12, 01);
 		LocalDateTime t = a.with(TemporalAdjusters.firstDayOfMonth());
 		System.out.println("TemporalAdjusters.firstDayOfMonth() = " + t + "  getDayOfWeek() = " + t.getDayOfWeek());
 		//
 		LocalDate currentDate = LocalDate.now();
 		LocalDateTime currentDateTime = LocalDateTime.now();
 		// 3 years, 2 months, 1 day 
-		Period period = Period.of(3, 2, 1); 
+		Period period = Period.of(3, 2, 1);
+        System.out.println("period = " + period);
 		// You can modify the values of dates using periods
 		LocalDate newDate = currentDate.plus(period); 
 		System.out.println("newDate add 3 years, 2 months, 1 day = " + newDate);
@@ -104,7 +106,9 @@ public class ApplTime {
 		System.out.println("newDateTime = " + newDateTime);
 		*/
 		/*-
-		Period period = Period.of(3, 2, 1).minusYears(1).minusMonths(1);
+		Period period = Period.of(3, 2, 1)
+                .minusYears(1)
+                .minusMonths(1);
 		System.out.println("period = " + period);
 		LocalDateTime time1 = LocalDateTime.now();
 		LocalDateTime time2 = time1.minus(period);
@@ -113,7 +117,7 @@ public class ApplTime {
 		Duration duration = Duration.between(time2, time1);
 		System.out.println("duration = " + duration);
 		*/
-        /*-
+        // /*-
         LocalDate ofEpochDay = LocalDate.ofEpochDay(0L); // 01.01.1970
         System.out.println("ofEpochDay = " + ofEpochDay);
         //
@@ -139,6 +143,6 @@ public class ApplTime {
         // DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy 'at' hh:mm");
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss.SSS dd.MM.yyyy");
         System.out.println("localDate.format(formatter): " + localDate.format(formatter));
-        */
+        // */
     }
 }
