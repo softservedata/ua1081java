@@ -3,6 +3,8 @@ package com.softserve.Homework05.Task1;
 import java.util.Scanner;
 
 public class Task1_02 {
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         System.out.println(" Enter 10 numbers: ");
         int[] arrayNumbers = entryNumbers(10);
@@ -47,7 +49,6 @@ public class Task1_02 {
     }
 
     public static int[] entryNumbers(int n) {
-        Scanner scanner = new Scanner(System.in);
         int[] arrayNumbers = new int[n];
         for (int i = 0; i < n; i++) {
             arrayNumbers[i] = scanner.nextInt();

@@ -1,5 +1,5 @@
 package com.softserve.Homework01;
-
+//don't forget formatting your code.
 import java.util.Scanner;
 public class HomeWork01 {
 
@@ -12,7 +12,7 @@ public class HomeWork01 {
     public static void task1(Scanner console){
         System.out.println("******* Task 1 *******");
         System.out.print(" Enter radius: ");
-        double R = console.nextDouble(); //better name is radius.
+        double R = console.nextDouble(); //better name is radius, and don't name variables with capital letter.
         console.nextLine();
         System.out.println(" Perimeter circle = "+(2*R*Math.PI));//Don`t forget formatting your code.
         System.out.println(" Area circle = " + (Math.PI*R*R)); //If you use library Math, use Math.pow(R,2) instead R*R.

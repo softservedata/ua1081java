@@ -4,8 +4,6 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
-
-
 public class Task3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -16,12 +14,13 @@ public class Task3 {
         cars[3] = new Car("Convertible", 2020, 2.5);
         System.out.print(" Enter year of production: ");
         int yearProduction = scanner.nextInt();
-        scanner.close();
+        scanner.close();//it must be on the end of the program
         System.out.println(" Cars with " + yearProduction + " year production:");
-        for (int i = 0; i < cars.length; i++) {
+        for (int i = 0; i < cars.length; i++) {//make sense to use it for each
             if (cars[i].getYearProduction() == yearProduction) {
                 System.out.println(cars[i]);
-            }
+            }//and what will be if there are no cars with this year?
+            //it will be better to add else statement with a message
         }
         System.out.println(" Cars, sorted by year of production:");
         for (int i = 0; i < cars.length; i++) {
@@ -31,9 +30,7 @@ public class Task3 {
                     cars[j] = cars[j + 1];
                     cars[j + 1] = temp;
                 }
-
             }
-
         }
         System.out.println(Arrays.toString(cars));
     }
