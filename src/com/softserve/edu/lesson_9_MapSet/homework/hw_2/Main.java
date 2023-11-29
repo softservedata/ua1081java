@@ -39,7 +39,12 @@ public class Main {
 
     }
 
-
+//it's easier to use removeIf, but you don't know it yet
+//    static void deleteDuplicate(Map<String, String> map) {
+//        map.entrySet().removeIf(next -> next.getValue().equals("Orest"));
+//        System.out.println("After removal " + map);
+//
+//    }
     static void deleteDuplicate(Map<String, String> map) {
         Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
         while (iterator.hasNext()) {
