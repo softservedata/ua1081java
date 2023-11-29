@@ -58,8 +58,10 @@ public class Grades {
                         ", Law grade=" + lawGrade;
     }
 
-    public double getAVG() {
-        double avg = (double) (mathGrade + historyGrade + languageGrade + lawGrade) / 4;
-        return avg;
+    public double getAVG() {//better to use List<Integer> grades and name method getAverage()
+        return (double) (mathGrade + historyGrade + languageGrade + lawGrade) / 4;//better to use grades.size() instead of 4,
+        //because if you add new subject you will not need to change this method
+        //also you can use stream API
+        //but, it's possible only for List<Integer> grades
     }
 }

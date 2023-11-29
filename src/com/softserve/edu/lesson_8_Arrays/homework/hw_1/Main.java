@@ -14,6 +14,10 @@ public class Main {
 
     }
 
+    /**
+     * The method randomNum uses Random.nextInt to generate random numbers.
+     * @param list
+     */
     static void randomNum(List<Integer> list) {
         Random random = new Random();
         for (int i = 0; i < 10; i++) {
@@ -21,7 +25,9 @@ public class Main {
         }
         System.out.println("Random numbers: " + list);
     }
-
+    //The method swapMinAndMax uses Collections.min and Collections.max, which is efficient.
+    // Be cautious with lists that contain duplicate min or max values,
+    // as indexOf will return the index of the first occurrence.
     static void swapMinAndMax(List<Integer> list) {
         int min = list.indexOf(Collections.min(list));
         int max = list.indexOf(Collections.max(list));
@@ -29,6 +35,10 @@ public class Main {
         System.out.println("Swapped min and max values: " + list);
     }
 
+    /**
+     * The method insertRandomDigitBeforeNegative uses Random.nextInt to generate random numbers.
+     * @param list
+     */
     static void insertRandomDigitBeforeNegative(List<Integer> list) {
         Random random = new Random();
         int n = random.nextInt(100, 999);
@@ -83,3 +93,4 @@ public class Main {
 
     }
 }
+//Removing the Last Even Element from myCollection is missing
