@@ -42,3 +42,40 @@ public class Main {
         System.out.println("REVERSED SECOND WORD " + stringSecond );
     }
 }
+//your code is working, but it is not flexible, because you can't change the number of words
+ class WorkWithStrings{
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        String[] words = readWords(5);
+        longestWord(words);
+        reversedSecondWord(words);
+        sc.close();
+    }
+
+    static String[] readWords(int count) {
+        String[] arr = new String[count];
+        System.out.println("Please enter " + count + " words:");
+        for (int i = 0; i < count; i++) {
+            System.out.println((i + 1) + " word:");
+            arr[i] = sc.next();
+        }
+        return arr;
+    }
+
+    static void longestWord(String[] arr) {
+        String longest = "";
+        for (String s : arr) {
+            if (s.length() > longest.length()) {
+                longest = s;
+            }
+        }
+        System.out.println("LONGEST WORD: " + longest);
+        System.out.println("LONGEST WORD HAS " + longest.length() + " letters");
+    }
+
+    static void reversedSecondWord(String[] arr) {
+        String reversed = new StringBuilder(arr[1]).reverse().toString();
+        System.out.println("REVERSED SECOND WORD: " + reversed);
+    }
+}
