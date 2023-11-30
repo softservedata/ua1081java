@@ -25,7 +25,6 @@ public class Student extends Person {
     }
     @Override
     public Object clone() throws CloneNotSupportedException {
-        Student studentClone = (Student) super.clone();
-        return  studentClone;
+        return (Student) super.clone();
     }
 }

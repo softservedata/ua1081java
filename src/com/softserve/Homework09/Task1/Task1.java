@@ -96,7 +96,7 @@ public class Task1 {
 
     public static List<Integer> swapMaxAndMin(Collection<Integer> collection) {
         List<Integer> list = new ArrayList<>(collection);
-        Integer maxIndex = 0;
+        Integer maxIndex = 0;// better int, because we don't need to check null
         Integer minIndex = 0;
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) > list.get(maxIndex)) {
