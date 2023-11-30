@@ -4,7 +4,9 @@ public class Bus extends GroundVehicle{
     private String route;
     public Bus(){}
     @Override
-    protected void drive(){}
+    protected void drive(){//can be something like this
+        System.out.println("Bus is driving");
+    }
 
     public String getRoute() {
         return route;

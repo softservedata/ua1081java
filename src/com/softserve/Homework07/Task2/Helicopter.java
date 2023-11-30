@@ -9,6 +9,7 @@ public class Helicopter extends FlyingVehicle {
 
     @Override
     protected void fly() {
+        System.out.println("Helicopter is flying");
     }
 
     @Override

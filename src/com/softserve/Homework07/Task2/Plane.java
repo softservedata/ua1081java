@@ -5,7 +5,9 @@ public class Plane extends FlyingVehicle{
     public Plane(){}
 
     @Override
-    protected void fly() {}
+    protected void fly() {
+        System.out.println("Plane is flying");
+    }
     @Override
     protected void land(){}
 

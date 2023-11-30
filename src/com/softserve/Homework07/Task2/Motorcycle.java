@@ -8,6 +8,7 @@ public class Motorcycle extends GroundVehicle {
 
     @Override
     protected void drive() {
+        System.out.println("Motorcycle is driving");
     }
 
     public int getMaxSpeed() {

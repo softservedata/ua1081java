@@ -4,7 +4,9 @@ public class Boat extends WaterVehicle{
     private int volume;
     public Boat(){}
     @Override
-    protected void isSailing(){}
+    protected void isSailing(){//can be something like this
+        System.out.println("Boat is sailing");
+    }
 
     public int getVolume() {
         return volume;
