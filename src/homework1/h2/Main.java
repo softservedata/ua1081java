@@ -13,18 +13,11 @@ public class Main {
         byte radius = sc.nextByte();
 
         System.out.println("Perimeter is:");
-        System.out.println(2*3.14*radius);
+        System.out.println(2 * 3.14 * radius);//better to use Math.PI
 
 
         System.out.println("Area is:");
-        System.out.println((radius*radius)*3.14);
-
-
-
-
-
-
-
-
+        System.out.println((radius * radius) * 3.14);
+        sc.close();//close the scanner, don't forget
     }
 }

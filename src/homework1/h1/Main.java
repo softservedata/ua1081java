@@ -12,10 +12,10 @@ public class Main {
         System.out.println("What is your name?");
         String name = sc.nextLine();
 
-        System.out.print("Where do you live " +name+ " ?");
+        System.out.print("Where do you live " + name + " ?");
         String address = sc.nextLine();
 
-        System.out.println("Hello " +name+ " . You live in " +address);
-
+        System.out.println("Hello " + name + " . You live in " + address);
+        sc.close();//close the scanner, don't forget
     }
 }
