@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static Scanner SCANNER = new Scanner(System.in);
+    public static Scanner SCANNER = new Scanner(System.in);//can be lowercase
 
   public static void main(String[] args) {
 
