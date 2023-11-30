@@ -48,9 +48,7 @@ public class Student {
     }
 
     public static void printStudents(List<Student> studentList, int course){
-        Iterator<Student> iterator = studentList.iterator();
-        while (iterator.hasNext()){
-            Student student = iterator.next();
+        for (Student student : studentList) {
             System.out.println(student);
         }
     }
