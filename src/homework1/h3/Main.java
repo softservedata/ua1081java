@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
+//Remember formatting the code
 public class Main {
     public static void main(String[] args) {
 
@@ -29,18 +30,18 @@ public class Main {
         float thirdc = sc.nextFloat();
 
         System.out.println("Cost of the first call:");
-        System.out.println(first*firstc);
+        System.out.println(first * firstc);
 
         System.out.println("Cost of the second call:");
-        System.out.println(second*secondc);
+        System.out.println(second * secondc);
 
 
         System.out.println("Cost of the third call:");
-        System.out.println(third*thirdc);
+        System.out.println(third * thirdc);
 
         System.out.println("Total Cost of Calls:");
-        System.out.println((first*firstc)+(second*secondc)+(third*thirdc));
-
+        System.out.println((first * firstc) + (second * secondc) + (third * thirdc));
+        sc.close();//close the scanner, don't forget
 
     }
 }

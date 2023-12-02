@@ -4,12 +4,15 @@ public class Person {
     private String firstName;
     private String lastName;
     private int birthYear;
+
     public Person() {
     }
+
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+
     public static void input(Person person) {
         System.out.println("Input first name:");
         String firstName = Main.SCANNER.nextLine();
@@ -31,10 +34,11 @@ public class Person {
 
     public static void output(Person person) {
         System.out.println(" Person info ");
-        System.out.println("Name: " + person.getFirstName()+ "\t Last name: "
+        System.out.println("Name: " + person.getFirstName() + "\t Last name: "
                 + person.getLastName() + "\n Birth year: " + person.getBirthYear() + "\t Age person: " + person.getAge());
     }
-@Override
+
+    @Override
     public String toString() {
         return "Person{" +
                 "firstName='" + firstName + '\'' +
@@ -66,6 +70,7 @@ public class Person {
     public void setBirthYear(int birthYear) {
         this.birthYear = birthYear;
     }
+
     public void changeName() {
         System.out.println("Input new first name:");
         firstName = Main.SCANNER.nextLine();
