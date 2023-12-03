@@ -26,4 +26,5 @@ public class DivideDoubles {
             System.out.println(e.getMessage());
         }
     }
+
 }
