@@ -28,6 +28,35 @@ public class MapOperations {
         return String.format("ID of the input value: %s%n", ids);
     }
 
+    static String findDuplicates(Map<Integer, String> map, Integer id, String value) {
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            if (entry.getKey().equals(id) && entry.getValue().equals(value)) {
+                return String.format("There is a complete duplicate pair of %d - %s in the map%n",
+                        id, value);
+            }
+            if (entry.getKey().equals(id)) {
+                return String.format("There is a duplicate id of %d%n", id);
+            }
+            if (entry.getValue().equals(value)) {
+                return String.format("There is a duplicate value of %s%n", value);
+            }
+        }
+        return "";
+    }
+
+    static void addRecord(Map<Integer, String> map) {
+        System.out.println("Please, input an id and name to add: ");
+        Integer id = sc.nextInt();
+        sc.nextLine();
+        String value = sc.nextLine();
+//        sc.nextLine();
+        if (map.containsKey(id) || map.containsValue(value)) {
+            System.out.println(findDuplicates(map, id, value));
+        } else {
+            map.put(id, value);
+        }
+    }
+
     public static void main(String[] args) {
         Map<Integer, String> employeeMap = new HashMap<>();
         employeeMap.put(1, "Paul");
@@ -39,12 +68,19 @@ public class MapOperations {
         employeeMap.put(6, "Joe");
 
         print(employeeMap);
-        System.out.println("Please, input an ID: ");
-        Integer inputId = sc.nextInt();
-        sc.nextLine();
-        System.out.println(getValueByID(employeeMap, inputId));
-        System.out.println("Please, input a name: ");
-        String inputName = sc.nextLine();
-        System.out.println(getValueByName(employeeMap, inputName));
+//        System.out.println("Please, input an ID: ");
+//        Integer inputId = sc.nextInt();
+//        sc.nextLine();
+//        System.out.println(getValueByID(employeeMap, inputId));
+//        System.out.println("Please, input a name: ");
+//        String inputName = sc.nextLine();
+//        System.out.println(getValueByName(employeeMap, inputName));
+
+        addRecord(employeeMap);
+        addRecord(employeeMap);
+        addRecord(employeeMap);
+        addRecord(employeeMap);
+        print(employeeMap);
+
     }
 }
