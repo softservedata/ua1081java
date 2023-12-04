@@ -19,3 +19,12 @@ public class Main {
         System.out.println(student3.activity());
     }
 }
+//In your Person and Student classes, the info() method is defined as a void method (public void info()),
+// which prints the information directly. However, based on your description, info() should return a string.
+// Therefore, it should be defined as public String info() and return the information instead of printing it.
+//In the Student class, the info() method should be overridden to add course information.
+// Your implementation calls the superclass's info() method and then prints the course, which is a practical approach.
+//
+//It looks like there's a small typo in your class name Studnent :)) It should be Student.
+//
+//

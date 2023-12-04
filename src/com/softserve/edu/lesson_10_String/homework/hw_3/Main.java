@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);//static or don't forget to close
         System.out.println("Please enter the text which has a US dollar format ");
         String text = sc.nextLine();
         String p = "\\$\\d+\\.\\d{2}";

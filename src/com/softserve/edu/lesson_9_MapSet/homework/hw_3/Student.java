@@ -63,11 +63,11 @@ public class Student {
                 '}';
     }
 
-    static void printStudents(List<Student> list, int course) {
+    static void printStudents(List<Student> list) {
         Iterator<Student> iterator = list.iterator();
         while (iterator.hasNext()) {
             Student next = iterator.next();
-            if (next.getCourse() == course) {
+            if (next.getCourse() == 2) {
                 System.out.println(next);
             }
         }

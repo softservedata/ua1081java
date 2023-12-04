@@ -1,9 +1,7 @@
 package com.softserve.edu.lesson_9_MapSet.homework.hw_3;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,7 +15,7 @@ public class Main {
         students.add(new Student("Viktor", 1));
         students.add(new Student("Olga", 2));
 
-        Student.printStudents(students, 2);
+        Student.printStudents(students);
         students.sort(new Student.ByNameAndCourse());
         System.out.println();
         Student.display(students);
