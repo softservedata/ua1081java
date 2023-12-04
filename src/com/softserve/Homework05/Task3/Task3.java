@@ -2,8 +2,8 @@ package com.softserve.Homework05.Task3;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.InputMismatchException;
 import java.util.Scanner;
-
 
 
 public class Task3 {
@@ -15,8 +15,14 @@ public class Task3 {
         cars[2] = new Car("Hatchback", 2017, 1.6);
         cars[3] = new Car("Convertible", 2020, 2.5);
         System.out.print(" Enter year of production: ");
-        int yearProduction = scanner.nextInt();
-        scanner.close();
+        int yearProduction;
+        try {
+            yearProduction = scanner.nextInt();
+            scanner.close();
+        } catch (InputMismatchException e) {
+            throw new InputMismatchException(" Wrong entry!");
+        }
+
         System.out.println(" Cars with " + yearProduction + " year production:");
         for (int i = 0; i < cars.length; i++) {
             if (cars[i].getYearProduction() == yearProduction) {

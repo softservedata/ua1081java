@@ -5,6 +5,7 @@ import com.softserve.Homework03.Task02.Numbers;
 import com.softserve.Homework03.Task03.Person;
 
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Homework03 {
@@ -19,12 +20,16 @@ public class Homework03 {
         System.out.println("******* Task 1 *******");
         Triangle triangle = new Triangle();
         Scanner scanner = new Scanner(System.in);
-        System.out.print(" Enter side a: ");
-        triangle.setSideA(scanner.nextDouble());
-        System.out.print(" Enter side b: ");
-        triangle.setSideB(scanner.nextDouble());
-        System.out.print(" Enter side c: ");
-        triangle.setSideC(scanner.nextDouble());
+        try {
+            System.out.print(" Enter side a: ");
+            triangle.setSideA(scanner.nextDouble());
+            System.out.print(" Enter side b: ");
+            triangle.setSideB(scanner.nextDouble());
+            System.out.print(" Enter side c: ");
+            triangle.setSideC(scanner.nextDouble());
+        } catch (InputMismatchException e) {
+            throw new InputMismatchException(" Wrong entry!");
+        }
         System.out.print(" Area of triangle -> " + triangle.calculateArea());
     }
 
@@ -32,15 +37,19 @@ public class Homework03 {
         System.out.println("\n******* Task 2 *******");
         Numbers task2 = new Numbers();
         Scanner scanner = new Scanner(System.in);
-        System.out.print(" Enter number1: ");
-        task2.setNumber1(scanner.nextInt());
-        scanner.nextLine();
-        System.out.print(" Enter number2: ");
-        task2.setNumber2(scanner.nextInt());
-        scanner.nextLine();
-        System.out.print(" Enter number3: ");
-        task2.setNumber3(scanner.nextInt());
-        scanner.nextLine();
+        try {
+            System.out.print(" Enter number1: ");
+            task2.setNumber1(scanner.nextInt());
+            scanner.nextLine();
+            System.out.print(" Enter number2: ");
+            task2.setNumber2(scanner.nextInt());
+            scanner.nextLine();
+            System.out.print(" Enter number3: ");
+            task2.setNumber3(scanner.nextInt());
+            scanner.nextLine();
+        } catch (InputMismatchException e) {
+            throw new InputMismatchException(" Wrong entry!");
+        }
         System.out.print(" The smallest number -> " + task2.getTheSmallestNumber());
     }
 
@@ -60,8 +69,10 @@ public class Homework03 {
             newFirstName = scanner.nextLine();
             System.out.print(" Enter last name: ");
             newLastName = scanner.nextLine();
+            if(newFirstName.isEmpty()||newLastName.isEmpty()){
+                throw new InputMismatchException(" Wrong entry!");
+            }
             personArray[i].changeName(newFirstName, newLastName);
-
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.softserve.Homework04;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Task01 {
@@ -9,12 +10,16 @@ public class Task01 {
         double number1;
         double number2;
         double number3;
-        System.out.print(" Enter float number1: ");
-        number1 = scanner.nextDouble();
-        System.out.print(" Enter float number2: ");
-        number2 = scanner.nextDouble();
-        System.out.print(" Enter float number3: ");
-        number3 = scanner.nextDouble();
+        try {
+            System.out.print(" Enter float number1: ");
+            number1 = scanner.nextDouble();
+            System.out.print(" Enter float number2: ");
+            number2 = scanner.nextDouble();
+            System.out.print(" Enter float number3: ");
+            number3 = scanner.nextDouble();
+        } catch (InputMismatchException e) {
+            throw new InputMismatchException(" Wrong entry!");
+        }
         if (inRange(number1) && inRange(number2) && inRange(number3)) {
             System.out.println(" All numbers in range [-5 ; 5]");
         } else {

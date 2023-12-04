@@ -12,7 +12,7 @@ public class Task1_01 {
         if(monthDays>0){
             System.out.println(" This month has "+monthDays+" days.");
         }else {
-            System.out.println(" Invalid month number!");
+            throw  new RuntimeException(" Invalid month number!");
         }
         scanner.close();
     }

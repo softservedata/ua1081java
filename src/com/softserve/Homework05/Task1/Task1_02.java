@@ -1,5 +1,6 @@
 package com.softserve.Homework05.Task1;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Task1_02 {
@@ -50,8 +51,12 @@ public class Task1_02 {
         Scanner scanner = new Scanner(System.in);
         int[] arrayNumbers = new int[n];
         for (int i = 0; i < n; i++) {
-            arrayNumbers[i] = scanner.nextInt();
-            scanner.nextLine();
+            try {
+                arrayNumbers[i] = scanner.nextInt();
+                scanner.nextLine();
+            } catch (InputMismatchException e) {
+                throw new InputMismatchException(" Wrong entry!");
+            }
         }
         return arrayNumbers;
     }

@@ -44,5 +44,6 @@ public class Triangle {
         double S = Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));//If you don't use S in the future, you can return this expression.
         return S;
     }
+
 }
 //For this task better check if such a triangle exists.
