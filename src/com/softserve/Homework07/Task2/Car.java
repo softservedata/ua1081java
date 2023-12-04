@@ -4,7 +4,9 @@ public class Car extends GroundVehicle{
     private String model;
     public Car(){}
     @Override
-    protected void drive(){}
+    protected void drive(){//can be something like this
+        System.out.println("Car is driving");
+    }
 
     public String getModel() {
         return model;

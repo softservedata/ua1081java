@@ -15,6 +15,7 @@ public class Task2 {
                 iterator.remove();
             }
         }
+        //strings.removeIf(String::isEmpty);// your while in Java 8
         String allSentence = "";
         for (String str: strings) {
             allSentence=allSentence.concat(str);

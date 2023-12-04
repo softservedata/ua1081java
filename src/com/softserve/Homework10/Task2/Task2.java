@@ -28,13 +28,7 @@ public class Task2 {
         }
     }
     public static void removeByName(Map<String,String> personMap, String name){
-        Iterator iterator = personMap.entrySet().iterator();
-        while(iterator.hasNext()){
-            Map.Entry element = (Map.Entry)iterator.next();
-            if(element.getValue().equals(name)){
-                iterator.remove();
-            }
-        }
+        personMap.entrySet().removeIf(element -> element.getValue().equals(name));
     }
     public static boolean sameName(Map<String,String> personMap){
         for (String key1: personMap.keySet()) {

@@ -17,7 +17,6 @@ public class FullName implements Cloneable{
     }
     @Override
     public Object clone() throws CloneNotSupportedException {
-        FullName fullName = (FullName)super.clone();
-        return fullName;
+        return (FullName)super.clone();
     }
 }

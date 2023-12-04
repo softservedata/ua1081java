@@ -20,6 +20,19 @@ public class Task1 {
         kiwi.fly();
         System.out.println(penguin);
         penguin.fly();
-
+        //as for me it is better to use this way:
+        // Bird[] birds = new Bird[] {
+        //            new FlyingBird(),
+        //            new NonFlyingBird(),
+        //            new Swallow(),
+        //            new Eagle(),
+        //            new Kiwi(),
+        //            new Penguin()
+        //        };
+        //
+        //        for (Bird bird : birds) {
+        //            System.out.println(bird);
+        //            bird.fly();
+        //        }
     }
 }

@@ -5,9 +5,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Task4 {
+    static Scanner scanner = new Scanner(System.in);
+    static Random random = new Random();
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
+
         int number = random.nextInt(11);
         int playerNumber;
         do {
@@ -27,6 +28,6 @@ public class Task4 {
             }
         } while (playerNumber != number);
         System.out.println(" Congratulations !");
-        scanner.close();
+        scanner.close();//cannot close scanner here, because I did Scanner as static
     }
 }

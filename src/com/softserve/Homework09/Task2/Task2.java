@@ -17,7 +17,7 @@ public class Task2 {
         System.out.println(" List of students (2 course) after session: ");
         printStudents(studentList, 2);
     }
-
+//better methods move to Student class
     public static void printStudents(List<Student> studentList, int course) {
         for (Student student : studentList) {
             if (student.getCourse() == course) {
