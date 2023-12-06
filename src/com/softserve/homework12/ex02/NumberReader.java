@@ -17,10 +17,11 @@ public class NumberReader {
     }
 
     int readNumber(int start, int end) throws IllegalArgumentException {
-        System.out.println("\nPlease, input a number:");
+        System.out.printf("\nPlease, input a number in range between %d and %d (range borders not included):%n",
+                start, end);
         int input = sc.nextInt();
 
-        if (input < startOfRange || input > endOfRange) {
+        if (input < start + 1 || input > end - 1) {
             throw new IllegalArgumentException();
         }
         System.out.printf("%d is in range between %d and %d%n", input, start, end);
@@ -28,6 +29,7 @@ public class NumberReader {
     }
 
     //the program works until 10 integers in ascending way are input or if a user entered end of range, so it's impossible to enter more
+    //start and end of range are not included
     public static void main(String[] args) {
         NumberReader numberReader = new NumberReader(1, 100);
         int numberOfTries = 10;
@@ -36,11 +38,11 @@ public class NumberReader {
         while (numberOfTries > 0) {
             try {
                 numberReader.inputValue = numberReader.readNumber(numberReader.startOfRange, numberReader.endOfRange);
-                numberReader.startOfRange = numberReader.inputValue + 1;
+                numberReader.startOfRange = numberReader.inputValue;
                 listOfInputs.add(numberReader.inputValue);
 
-                if (numberReader.inputValue == numberReader.endOfRange) {
-                    System.out.println("\nYou have entered maximal value in range, so further input is not possible");
+                if (numberReader.inputValue == numberReader.endOfRange - 1) {
+                    System.out.println("\nYou have entered maximal value within range, so further input is not possible");
                     break;
                 }
                 numberOfTries--;
