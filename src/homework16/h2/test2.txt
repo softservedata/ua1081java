@@ -1,0 +1,45 @@
+private class Product {
+
+    private String name;
+    private String producer;
+    private double purchasePrice;
+    private double salePrice;
+    private long barcode;
+
+    private Product(String name, String producer,
+                   double purchasePrice, double salePrice, long barcode) {
+        this.name = name;
+        this.producer = producer;
+        this.purchasePrice = purchasePrice;
+        this.salePrice = salePrice;
+        this.barcode = barcode;
+    }
+
+    private String getProducer() {
+        return producer;
+    }
+
+
+    private String getName() {
+        return name;
+    }
+
+    private double getPurchasePrice() {
+        return purchasePrice;
+    }
+
+    private double getSalePrice() {
+        return salePrice;
+    }
+
+    private long getBarcode() {
+        return barcode;
+    }
+
+    @Override
+    private String toString() {
+        return String.format("Назва товару: %10s, Постачальник: %10s, " +
+                "Ціна приходу: %5.2f, Ціна продажу: %5.2f, " +
+                "Штрихкод: %10d", name, producer, purchasePrice, salePrice, barcode);
+    }
+}

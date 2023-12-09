@@ -1,0 +1,44 @@
+Vladyslav Baidak
+Birthday 12.12.1991
+vladyslav.baidak@sweetcv.com+38 (098) 999-99-99Kyiv, Ukraine
+Lead Backend Engineer with 8+ years of experience
+Skilled Java Developer with proven expertise in delivering large-scale software products. An impeccable knowledge and skills of creating distributed, robust and scalable server-side applications.  Experienced in the use of CQRS, Event Sourcing, Domain-Driven Design for real-world high-loaded projects. Always focused on goals and delivering success to rapidly evolving and dynamic environments.
+
+Skills
+Tech Stack
+Java, Kotlin, Scala, Spring, Java EE, AxonFramework, Hibernate, Kafka, Redis, Docker, Kubernetes
+
+Databases
+SQL: Oracle 12c, MS SQL Server, MySQL, MariaDB, PostgreSQL, DB2
+NoSQL: MongoDB
+Environment & Tools
+Windows, Centos, Debian, Alpine, IntelliJ IDEA, Ant, Maven, Gradle, TeamCity, Jenkins
+
+Experience
+Scalified LLC
+Lead Backend EngineerSep, 2016Present
+Planned and implemented the migration of company products into a microservices architecture
+Designed and implemented a high-performance Logstash and Elasticsearch monitoring system, which processed over 3000 metric events per second
+Configured and maintained fully automated continuous delivery processes within the company
+Established and managed a strong, motivated and result-focused backend team
+EPAM Systems, Barclays Investment Bank
+Senior Software EngineerMar, 2013Aug, 2016
+Implemented various server-side banking applications, which involved the processing of over 1000 transactions per second
+Effectively mentored and helped team members in the domain of distributed transactions, SAGA pattern, microservices orchestration approaches, etc.
+Developed and enhanced monitoring, statistics collection and logging system
+Luxoft
+Software EngineerFeb, 2010June, 2013
+Effectively used knowledge in the Big Data area to implement highly performant and reliable Social Media crawler system
+Designed, implemented and delivered Facebook & Twitter API adapters into the existing system
+Improved and optimized existing crawler modules that increased processing capacity to 1000+ posts per second
+Certificates
+CISCO
+IT Essentials: PC Hardware and Software
+CCNA Exploration Network Fundamentals
+LAN Switching and Wireless
+CCNA Exploration Routing Protocols and Concepts
+CCNA Exploration Accessing the WAN
+Languages
+EnglishUpper intermediate
+UkrainianNative
+RussianNative
