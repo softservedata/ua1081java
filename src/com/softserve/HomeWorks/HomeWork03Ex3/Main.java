@@ -2,9 +2,9 @@ package com.softserve.HomeWorks.HomeWork03Ex3;
 import java.util.Scanner;
 class Person {
 
-    private String firstName = "Bohdan";
-    private String lastName = "Lodin";
-    private int birthYear = 2000;
+    private String firstName;
+    private String lastName;
+    private int birthYear;
 
     public Person(){
     }
