@@ -1,4 +1,5 @@
-package com.softserve.Practical_task01;
+package com.softserve.PracticalTasks.PracticalTask01;
+
 import java.util.Scanner;
 
 public class Main {
@@ -41,7 +42,7 @@ public class Main {
 
                 case 2:
                     System.out.println("You have selected a task 2");
-                   // Scanner scanner2 = new Scanner(System.in);
+                    // Scanner scanner2 = new Scanner(System.in);
 
                     System.out.print("Enter the first number: ");
                     double firstNumber = scanner.nextDouble();
