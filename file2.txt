@@ -1,0 +1,3 @@
+Number of lines in file1.txt.: 9
+The longest line in file1.txt.: In order to be a successful IT specialist you must possess some skills and personal qualities. The most important ones are the following: being able to think logically, love to solve problems, persistence and patience. A computer programmer must be able to find the most efficient way to solve the problem.
+My name is: Stanislav. My birthday date is: 09.08.1992
