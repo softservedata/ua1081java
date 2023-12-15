@@ -1,4 +1,4 @@
-package com.softserve.HomeWorks;
+package com.softserve.HomeWorks.HomeWork09Ex2;
 
 import java.util.ArrayList;
 import java.util.Iterator;
