@@ -1,0 +1,23 @@
+Summary
+Date of birth 31.05.1990
+Motivated data scientist with over three years of professional experience analyzing data for managers to engage in decision-making processes. Seeking a role as a Data Scientist with the Stehr Group.
+Education
+East Virginia University, 2019
+Bachelor of Science in computer science
+Experience
+Whiteboard Data Inc., Rockville, MD, Data Analyst
+May 2019 - Current
+Analyze data to find trends and patterns for decision-making
+Report on trends in data to help executives form their decisions with data
+Communicate with executives and other data professionals to form plans based on data
+Collect data and clean it to remove duplicates and fill gaps for a well-rounded and understandable set of data
+Following company procedures and policies to process data effectively
+Certifications
+Advanced Analytics Professional, SAS - 2021
+Skills
+Data analysis
+Communication
+Technology
+Mathematics
+Data collection
+Reporting

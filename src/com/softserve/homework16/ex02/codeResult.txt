@@ -1,0 +1,57 @@
+private class Product {
+    private String manufactureCategory;
+    private LocalDate dateOfManufacture;
+    private double price;
+
+    private Product(String manufactureCategory, LocalDate dateOfManufacture, double price) {
+        this.manufactureCategory = manufactureCategory;
+        this.dateOfManufacture = dateOfManufacture;
+        this.price = price;
+    }
+
+    private String getManufactureCategory() {
+        return manufactureCategory;
+    }
+
+    private void setManufactureCategory(String manufactureCategory) {
+        this.manufactureCategory = manufactureCategory;
+    }
+
+    private LocalDate getDateOfManufacture() {
+        return dateOfManufacture;
+    }
+
+    private void setDateOfManufacture(LocalDate dateOfManufacture) {
+        this.dateOfManufacture = dateOfManufacture;
+    }
+
+    private double getPrice() {
+        return price;
+    }
+
+    private void setPrice(double price) {
+        this.price = price;
+    }
+
+    @Override
+    private String toString() {
+        return "Product{" +
+                "manufactureCategory='" + manufactureCategory + '\'' +
+                ", dateOfManufacture=" + dateOfManufacture +
+                ", price=" + price +
+                '}';
+    }
+
+    @Override
+    private boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return Double.compare(getPrice(), product.getPrice()) == 0 && Objects.equals(getManufactureCategory(), product.getManufactureCategory()) && Objects.equals(getDateOfManufacture(), product.getDateOfManufacture());
+    }
+
+    @Override
+    private int hashCode() {
+        return Objects.hash(getManufactureCategory(), getDateOfManufacture(), getPrice());
+    }
+}
